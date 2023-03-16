@@ -84,25 +84,7 @@ const TasksToDo = () => {
                 <b>Completed Tasks</b> {completedTaskCount}
               </TaskCount>
             </Tasks>
-            <div>
-              <ul>
-                {todoList.map((todo) => {
-                  return (
-                    <LIST
-                      complete = {todo.complete}
-                      id={todo.id}
-                      onClick={() => handleComplete(todo.id)}
-                      style={{
-                        listStyle: "none",
-                        textDecoration: todo.complete && "line-through",
-                      }}
-                    >
-                      {todo.task}
-                    </LIST>
-                  );
-                })}
-              </ul>
-            </div>
+            
           </div>
         </Container>
       );   

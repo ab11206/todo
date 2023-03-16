@@ -4,7 +4,7 @@ import TodoHeader from './Components/TodoHeader';
 import TodoFooter from './Components/TodoFooter';
 //import styledjs from './Components/styledjs';
 import TasksToDo from './Components/TasksToDo';
-/*import TaskList from './Components/TaskList';*/
+import TaskList from './Components/TaskList';
 import { useState } from 'react';
 
 const App = () => {
@@ -12,7 +12,7 @@ const App = () => {
 return (<main>
     
       <TodoHeader />
-      <TasksToDo/>
+      <TaskList/>
       <TodoFooter />
   </main>
   );
